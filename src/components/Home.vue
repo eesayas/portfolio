@@ -24,6 +24,11 @@ export default {
     position: relative;
     height: calc(100% - 6.3rem);
     margin-top: 6.3rem;
+    background: linear-gradient(rgba(23,27,27, 0.7), rgba(23,27,27, 0.7)), url("/assets/code.jpg");
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .home-cont > div{

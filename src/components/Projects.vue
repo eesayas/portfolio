@@ -3,9 +3,9 @@
         <p class="text-center">MY PROJECTS</p>
         <div class="d-flex mx-5 my-5 justify-content-around flex-wrap"> 
             <ProjectCard/>
+            <!-- <ProjectCard/>
             <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
+            <ProjectCard/> -->
         </div>
     </div>    
 </template>
