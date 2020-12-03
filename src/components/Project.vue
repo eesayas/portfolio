@@ -1,17 +1,32 @@
 <template>
 <div id="project" style="padding: 2rem 3rem;" role="button">
     <div class="d-flex">
-        <span>REACTJS</span>
-        <span>JAVASCRIPT</span>
+        <span v-for="l in data.p.langs" :key="l" class="langs">{{l}}</span>
     </div>
-    <h2>Classie</h2>
-    <p>A ReactJS web application for student and staff managing of a teaching centre.</p>
+    <h2>{{data.p.name}}</h2>
+    <p>{{data.p.desc}}</p>
+
+    <div class="d-flex">
+        <a class="d-flex align-items-center" role="button" target="_blank" :href="data.p.code">
+            <font-awesome-icon :icon="['fas', 'code']"/>
+            <span class="mx-2">Code</span>
+        </a>   
+
+        <a class="d-flex align-items-center ml-2" role="button" target="_blank" :href="data.p.app">
+            <font-awesome-icon :icon="['fas', 'desktop']"/>
+            <span class="mx-2">View App</span>
+        </a>  
+    </div> 
+    
 </div>
 </template>
 
 <script>
 export default {
-    name: "Project"
+    name: "Project",
+    props: {
+        data: Object
+    }
 }
 </script>
 
@@ -33,6 +48,10 @@ span{
     font-family: RubikLight;
 }
 
+.langs{
+    text-transform: uppercase;
+}
+
 span:nth-child(1){
     margin-left: 0;
 }
@@ -44,5 +63,9 @@ h2{
 p{
     color: #939393;
     font-family: RubikLight;
+}
+
+a{
+    color: white !important;
 }
 </style>

@@ -8,15 +8,7 @@
     </div>
     
     <div class="ml-5 h-100" id="projects">
-      <Project/>
-      <Project/>
-      <Project/>
-      <Project/>
-      <Project/>
-      <Project/>
-      <Project/>
-      <Project/>
-
+      <Project v-for="p in projects" :key="p.name" :data="{p}"/>
     </div>
   </div>
 </div>
@@ -34,6 +26,74 @@ export default {
   name: 'App',
   components: {
     About, Skills, Contact, Project
+  },
+  data(){
+    return {
+      projects: [
+        {
+          langs: ['webrtc', 'peerjs'],
+          name: 'iSeeYa',
+          desc: 'A simple video conferencing app that uses PeerJS and WebRTC.',
+          code: 'https://github.com/eesayas/iseeya',
+          app: "https://iseeya.eesayas.com/",
+        },
+        { 
+          langs: ['reactjs', 'javascript', 'mongodb'],
+          name: 'Classie',
+          desc: 'A ReactJS web application for student and staff management of a teaching centre.',
+          code: 'https://github.com/eesayas/classie.ca',
+          app: "https://www.youtube.com/watch?v=C9_weFglsAU",
+        },
+
+        {
+          langs: ['python', 'django', 'websrapping'],
+          name: 'Gander',
+          desc: 'A Django web app for deciding what Netflix movie to watch with only a limited time.',
+          code: 'https://github.com/eesayas/Gander',
+          app: "https://gander-netflix.herokuapp.com/",
+        },
+
+        {
+          langs: ['java', 'android', 'firebase'],
+          name: 'Mooood',
+          desc: 'An Android social media, mobile app for sharing your moods.',
+          code: 'https://github.com/eesayas/Mooood',
+          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+        },
+
+        {
+          langs: ['chrome extension', 'javascript'],
+          name: 'Watch Your Profanity',
+          desc: 'A google chrome extension for filtering f-words from Netflix.',
+          code: 'https://github.com/eesayas/watch-your-profanity',
+          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+        },
+
+        {
+          langs: ['wit.ai', 'speech recognition', 'speech-to-text'],
+          name: 'Dear Diary',
+          desc: 'A journal web app where you can say your thoughts and have it in writing.',
+          code: 'https://github.com/eesayas/dear-diary',
+          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+        },
+
+        {
+          langs: ['expressjs', 'googleapis', 'webhooks'],
+          name: 'reformationedmonton.ca',
+          desc: 'A website for a local church with auto notifications via gmail and webhooks.',
+          code: 'https://github.com/eesayas/watch-your-profanity',
+          app: "https://www.reformationedmonton.ca/",
+        },
+
+        {
+          langs: ['tailwindcss', 'expressjs'],
+          name: 'hopebargainshoppe.online',
+          desc: 'A booking website for customers of Hope Bargain Shoppe.',
+          code: 'https://github.com/eesayas/hopebargain',
+          app: "https://hopebargainshoppe.online/",
+        },
+      ]
+    }
   }
 }
 </script>

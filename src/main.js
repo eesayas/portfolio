@@ -3,12 +3,14 @@ import App from './App.vue'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faFile } from '@fortawesome/free-solid-svg-icons'
+import { faFile, faCode, faDesktop } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 library.add(faGithub)
 library.add(faLinkedin)
 library.add(faFile)
+library.add(faCode)
+library.add(faDesktop)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 
