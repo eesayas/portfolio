@@ -1,65 +1,70 @@
 <template>
-    <div id="skills-cont">
-        <VueVisibilityTrigger @scrolledIn="skillsIsVisible"/>
-        <p class="text-center">SKILLS</p>
-        <div class="d-flex justify-content-around mx-5 flex-wrap">
-            <div v-for="skill in skills" :key="skill.name" class="d-table skill-circle">
-                <radial-progress-bar :diameter="150" :completed-steps="skill.completedSteps" :total-steps="10" startColor="#EEDFBB" stopColor="#EEDFBB" :animateSpeed="700" class="mx-auto mt-5">
-                    <p>{{ skill.completedSteps * 10}}%</p>
-                </radial-progress-bar>
-                <div class="text-center skill-name">{{skill.name}}</div>
-            </div>
-        </div>
+<div>
+<h4>SKILLS</h4>
+<br>
+<div style="width:300px;" v-for="skill in skills" :key="skill.name">
+    <div class="d-flex">
+        <span style="color:#989898;">{{skill.name}}</span>
+        <span class="ml-auto" v-bind:style="{opacity: percentOpacity}" style="transition: 1s;">{{skill.percent}}%</span>
     </div>
+    <div class="line" v-bind:style="{width: lineWidth}"></div>
+</div>
+
+</div>
 </template>
 
 <script>
-import RadialProgressBar from 'vue-radial-progress';
-import VueVisibilityTrigger from "vue-visibility-trigger";
 
 export default {
     name: "Skills",
     data(){
         return {
             skills: [
-                { name: "Javascript", completedSteps: 0 },
-                { name: "Python", completedSteps: 0 },
-                { name: "C++", completedSteps: 0 },
-                { name: "Java", completedSteps: 0 },
-                { name: "Dart", completedSteps: 0 },
-                { name: "C", completedSteps: 0 },
+                { name: "Javascript", percent: 100},
+                { name: "Python", percent: 100 },
+                { name: "C++", percent: 100 },
+                { name: "Java", percent: 100 },
+                { name: "Dart", percent: 100 },
             ],
-            skillsVisible: false,
+            lineWidth: "0px",
+            percentOpacity: "0%"
         }
     },
-    methods: {
-        skillsIsVisible (isVisible) {
-            this.skillsVisible = isVisible;
-            this.skills = this.skills.map(skill => {
-                return {
-                    name: skill.name,
-                    completedSteps: isVisible ? 10 : 0
-                }
-            });
-        }
-    },
-    components: {
-        RadialProgressBar, 
-        VueVisibilityTrigger
+    mounted(){
+        setTimeout( ()=> {
+            this.lineWidth = "300px";
+        }, 500);
+
+        setTimeout( () => {
+            this.percentOpacity = "100%";
+        }, 1200);
     }
 }
 </script>
 
 <style scoped>
-    p{
-        font-size: 2rem;
-    }
+h4{
+    font-family: RubikMedium;
+}
 
-    .skill-name{
-        font-size: 1.5rem;
-    }
+.line{
+    margin-top: 0.5rem;
+    height: 2px;
+    background: #fff;
+    transition: 1s !important;
+}
 
-    .skill-circle{
-        width: calc(100% / 3);
+.percent{
+    transition: 1s !important;
+    opacity: 0;
+}
+
+@keyframes animate {
+    0%{
+        left: 0;
     }
+    50%{
+        left: 100%;
+    }
+}
 </style>
