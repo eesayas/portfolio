@@ -1,13 +1,13 @@
 <template>
 <div id="app" class="d-flex h-100">
   <div class="d-flex mx-auto">
-    <div class="d-table" style="padding-top: 6.5vw">
+    <div class="d-table" style="padding-top: 6.5vw" id='left-panel'>
       <About/><br>
       <Skills/><br><br>
       <Contact/>
     </div>
     
-    <div class="h-100 ml-5" id="projects">
+    <div class="ml-5 h-100" id="projects">
       <Project/>
       <Project/>
       <Project/>
@@ -16,10 +16,9 @@
       <Project/>
       <Project/>
       <Project/>
-      <Project/>
+
     </div>
   </div>
-  
 </div>
 </template>
 
@@ -69,5 +68,34 @@ export default {
 #projects {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+@media screen and (max-width: 1250px) {
+  #projects{
+    margin-left: 1rem !important;
+  }
+
+  #app{
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 845px) {
+  #left-panel{
+    background-color: #151515;
+    width: 100%;
+  }
+
+  #projects{
+    margin-left: 0 !important;
+  }
+
+  #app{
+    height: auto !important;
+  }
+
+  #app > div{
+    flex-direction: column;
+  }
 }
 </style>

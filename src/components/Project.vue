@@ -20,6 +20,12 @@ export default {
     background: #202022;
     margin: 1rem 0;
     user-select: none;
+    transition: all .3s ease-in-out;
+}
+
+#project:hover{
+    box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
+    transform: translate3d(0px, -7px, 0px);
 }
 
 span{
