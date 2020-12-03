@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "prod": "npm run build && serve -s dist -l 3003",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
