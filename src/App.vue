@@ -54,6 +54,14 @@ export default {
         },
 
         {
+          langs: ['wit.ai', 'speech recognition', 'speech-to-text'],
+          name: 'Dear Diary',
+          desc: 'A journal web app where you can say your thoughts and have it in writing.',
+          code: 'https://github.com/eesayas/dear-diary',
+          app: "https://dear-diary.online/",
+        },
+
+        {
           langs: ['java', 'android', 'firebase'],
           name: 'Mooood',
           desc: 'An Android social media, mobile app for sharing your moods.',
@@ -69,19 +77,12 @@ export default {
           app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
         },
 
-        {
-          langs: ['wit.ai', 'speech recognition', 'speech-to-text'],
-          name: 'Dear Diary',
-          desc: 'A journal web app where you can say your thoughts and have it in writing.',
-          code: 'https://github.com/eesayas/dear-diary',
-          app: "http://dear-diary.online/",
-        },
 
         {
           langs: ['expressjs', 'googleapis', 'webhooks'],
           name: 'reformationedmonton.ca',
           desc: 'A website for a local church with auto notifications via gmail and webhooks.',
-          code: 'https://github.com/eesayas/watch-your-profanity',
+          code: 'https://github.com/eesayas/reformationedmonton.ca',
           app: "https://www.reformationedmonton.ca/",
         },
 
