@@ -46,7 +46,7 @@ export default {
         },
 
         {
-          langs: ['python', 'django', 'websrapping'],
+          langs: ['python', 'django', 'webscrapping'],
           name: 'Gander',
           desc: 'A Django web app for deciding what Netflix movie to watch with only a limited time.',
           code: 'https://github.com/eesayas/Gander',
@@ -74,7 +74,7 @@ export default {
           name: 'Dear Diary',
           desc: 'A journal web app where you can say your thoughts and have it in writing.',
           code: 'https://github.com/eesayas/dear-diary',
-          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+          app: "http://dear-diary.online/",
         },
 
         {
