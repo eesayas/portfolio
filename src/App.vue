@@ -38,10 +38,10 @@ export default {
           app: "https://iseeya.eesayas.com/",
         },
         { 
-          langs: ['reactjs', 'javascript', 'mongodb'],
+          langs: ['reactjs', 'mongodb', 'opencv'],
           name: 'Classie',
           desc: 'A ReactJS web application for student and staff management of a teaching centre.',
-          code: 'https://github.com/eesayas/classie.ca',
+          code: '',
           app: "https://www.youtube.com/watch?v=C9_weFglsAU",
         },
 

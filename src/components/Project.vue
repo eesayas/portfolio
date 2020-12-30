@@ -7,12 +7,12 @@
     <p>{{data.p.desc}}</p>
 
     <div class="d-flex">
-        <a class="d-flex align-items-center" role="button" target="_blank" :href="data.p.code">
+        <a class="d-flex align-items-center mr-2" role="button" target="_blank" :href="data.p.code" v-if="data.p.code">
             <font-awesome-icon :icon="['fas', 'code']"/>
             <span class="mx-2">Code</span>
         </a>   
 
-        <a class="d-flex align-items-center ml-2" role="button" target="_blank" :href="data.p.app">
+        <a class="d-flex align-items-center" role="button" target="_blank" :href="data.p.app">
             <font-awesome-icon :icon="['fas', 'desktop']"/>
             <span class="mx-2">View App</span>
         </a>  
