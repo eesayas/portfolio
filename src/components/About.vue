@@ -4,7 +4,15 @@
     <p>
         I am a Fullstack, Mobile, and Game developer. I am mostly self-taught and I love creating coding projects.
         I am currently in my 4th Year of Specialization in Computing Science with Minor in Business at the University of Alberta.
-    </p>  
+    </p>
+    <a class="d-flex align-items-center" role="button" target="_blank" href="mailto:briones@ualberta.ca">
+        <font-awesome-icon :icon="['fas', 'envelope']" size="lg"/>
+        <span class="mx-2">briones@ualberta.ca</span>
+    </a>
+    <a class="d-flex align-items-center mt-1" role="button" target="_blank" href="sms:+1-780-278-6076">
+        <font-awesome-icon :icon="['fas', 'phone']" size="lg"/>
+        <span class="mx-2">1 (780) 278 6076</span>
+    </a> 
 </div>
 </template>
 
