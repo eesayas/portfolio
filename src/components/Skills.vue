@@ -22,9 +22,8 @@ export default {
             skills: [
                 { name: "Javascript", percent: 100},
                 { name: "Python", percent: 100 },
-                { name: "C++", percent: 100 },
-                { name: "Java", percent: 100 },
                 { name: "Dart", percent: 100 },
+                { name: "Java", percent: 100 },
             ],
             lineWidth: "0px",
             percentOpacity: "0%"

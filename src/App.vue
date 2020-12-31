@@ -66,7 +66,7 @@ export default {
           name: 'Mooood',
           desc: 'An Android social media, mobile app for sharing your moods.',
           code: 'https://github.com/eesayas/Mooood',
-          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+          app: "",
         },
 
         {

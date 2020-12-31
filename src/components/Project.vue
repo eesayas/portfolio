@@ -12,7 +12,7 @@
             <span class="mx-2">Code</span>
         </a>   
 
-        <a class="d-flex align-items-center" role="button" target="_blank" :href="data.p.app">
+        <a class="d-flex align-items-center" role="button" target="_blank" :href="data.p.app" v-if="data.p.app">
             <font-awesome-icon :icon="['fas', 'desktop']"/>
             <span class="mx-2">View App</span>
         </a>  

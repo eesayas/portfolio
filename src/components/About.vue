@@ -3,7 +3,7 @@
     <h1>My name is <br> Isaias Briones</h1>
     <p>
         I am a Fullstack, Mobile, and Game developer. I am mostly self-taught and I love creating coding projects.
-        I am currently in my 3rd Year of Specialization in Computing Science with Minor in Business at the University of Alberta.
+        I am currently in my 4th Year of Specialization in Computing Science with Minor in Business at the University of Alberta.
     </p>  
 </div>
 </template>
