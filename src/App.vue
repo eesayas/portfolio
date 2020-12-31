@@ -40,7 +40,7 @@ export default {
         { 
           langs: ['reactjs', 'mongodb', 'opencv'],
           name: 'Classie',
-          desc: 'A ReactJS web application for student and staff management of a teaching centre.',
+          desc: 'A ReactJS web application for student and staff management of a KUMON centre.',
           code: '',
           app: "https://www.youtube.com/watch?v=C9_weFglsAU",
         },
@@ -66,7 +66,7 @@ export default {
           name: 'Mooood',
           desc: 'An Android social media, mobile app for sharing your moods.',
           code: 'https://github.com/eesayas/Mooood',
-          app: "https://www.youtube.com/watch?v=ONhTewFSVVo",
+          app: "",
         },
 
         {
