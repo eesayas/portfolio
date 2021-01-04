@@ -93,6 +93,14 @@ export default {
           code: 'https://github.com/eesayas/hopebargain',
           app: "https://hopebargainshoppe.online/",
         },
+
+        {
+          langs: ['reactjs'],
+          name: 'Gomoku Online',
+          desc: 'A web game app for Gomoku an abstract strategy board game. (Worked with a group of 3)',
+          code: 'https://github.com/ChrisChrisLoLo/GomokuOnline',
+          app: "https://chrischrislolo.github.io/GomokuOnline/",
+        },
       ]
     }
   }
