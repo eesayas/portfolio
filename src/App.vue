@@ -31,6 +31,12 @@ export default {
     return {
       projects: [
         {
+          langs: ['nestjs', 'nuxtjs', 'vuetify'],
+          name: 'PhilSA',
+          desc: "A portfolio/ecommerce website for the Philippine Students' Association at the University of Alberta",
+          app: "https://philsa.ca/",
+        },
+        {
           langs: ['webrtc', 'peerjs'],
           name: 'iSeeYa',
           desc: 'A simple video conferencing app that uses PeerJS and WebRTC.',
