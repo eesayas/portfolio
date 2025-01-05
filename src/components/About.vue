@@ -1,78 +1,47 @@
 <template>
-  <div>
+  <div class="my-auto px-4" style="display: table">
     <img
       src="https://media.licdn.com/dms/image/v2/C5603AQG8oikx_4bm_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1646460298961?e=1741219200&v=beta&t=qwJJRDiuRRbyLQx8kKxKyyAlLU0FnhNDzR15cqJHDjo"
       class="rounded-circle mb-4"
       height="150"
     />
 
-    <h1>
-      My name is <br />
-      Isaias Briones
-    </h1>
-    <p>
-      I am an experienced Full-Stack, Mobile, and Software Engineer. I love
-      watching movies, playing music, and coding.
+    <h1 class="fs-1 lh-1">Isaias Briones</h1>
+    <p class="fw-light text-white-50">
+      I am an experienced Full-Stack, Mobile, and Software Engineer.
     </p>
-    <a
-      class="d-flex align-items-center"
-      role="button"
-      target="_blank"
-      href="mailto:briones@ualberta.ca"
-    >
-      <font-awesome-icon :icon="['fas', 'envelope']" size="lg" />
-      <span class="mx-2">briones@ualberta.ca</span>
-    </a>
-    <a
-      class="d-flex align-items-center mt-1"
-      role="button"
-      target="_blank"
-      href="sms:+1-780-278-6076"
-    >
-      <font-awesome-icon :icon="['fas', 'phone']" size="lg" />
-      <span class="mx-2">1 (780) 278 6076</span>
-    </a>
+    <Link
+      icon="bx-envelope"
+      title="briones@ualberta.ca"
+      url="mailto:briones@ualberta.ca"
+    />
+    <Link icon="bx-phone" title="1 (780) 278 6076" url="sms:+1-780-278-6076" />
+
+    <br />
+    <div class="d-flex">
+      <Link v-for="(link, index) of links" :key="index" v-bind="link" />
+    </div>
   </div>
 </template>
 
-<script>
-export default {
-  name: "About",
-};
+<script setup lang="ts">
+import Link from "./Link.vue";
+
+const links = [
+  {
+    title: "Resume",
+    icon: "bx-file",
+    url: "https://www.canva.com/design/DAEDwiJGzjk/LFpSj0awI-DiSK9Q3f0jkw/view?utm_content=DAEDwiJGzjk&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton",
+  },
+  {
+    title: "Github",
+    icon: "bxl-github",
+    url: "https://github.com/eesayas",
+  },
+  {
+    title: "LinkedIn",
+    icon: "bxl-linkedin-square",
+    url: "https://www.linkedin.com/in/eesayas/",
+  },
+];
 </script>
-
-<style scoped>
-div {
-  width: 500px;
-}
-
-h1 {
-  font-family: RubikMedium;
-  font-size: 4rem;
-  line-height: 0.9;
-}
-p {
-  font-family: RubikLight;
-  color: #939393;
-  width: 400px;
-  font-size: 1.1rem;
-}
-
-@media screen and (max-width: 1250px) {
-  h1 {
-    font-size: 3rem;
-  }
-}
-
-@media screen and (max-width: 562px) {
-  div {
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 460px) {
-  p {
-    width: auto;
-  }
-}
-</style>

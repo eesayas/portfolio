@@ -1,0 +1,18 @@
+a {
+  color: #fefefe !important;
+  text-decoration: none !important;
+}
+
+a:hover {
+  text-decoration: underline !important;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #151515 !important;
+  font-family: "Rubik" !important;
+  color: #fefefe !important;
+}
