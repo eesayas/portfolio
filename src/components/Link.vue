@@ -1,7 +1,7 @@
 <template>
-  <span class="d-flex align-items-center">
+  <span class="flex items-center">
     <i class="bx bx-sm" :class="{ [props.icon]: true }"></i>
-    <a class="mx-2 fw-light" role="button" target="_blank" :href="props.url">
+    <a class="mx-2 font-light" role="button" target="_blank" :href="props.url">
       {{ props.title }}
     </a>
   </span>

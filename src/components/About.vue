@@ -2,14 +2,15 @@
   <div class="my-auto px-4" style="display: table">
     <img
       src="https://media.licdn.com/dms/image/v2/C5603AQG8oikx_4bm_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1646460298961?e=1741219200&v=beta&t=qwJJRDiuRRbyLQx8kKxKyyAlLU0FnhNDzR15cqJHDjo"
-      class="rounded-circle mb-4"
-      height="150"
+      class="rounded-full mb-4 w-44 h-44"
     />
 
-    <h1 class="fs-1 lh-1">Isaias Briones</h1>
-    <p class="fw-light text-white-50">
+    <h1 class="text-3xl leading-none font-semibold">Isaias Briones</h1>
+    <p class="font-extralight text-gray-400">
       I am an experienced Full-Stack, Mobile, and Software Engineer.
     </p>
+
+    <br />
     <Link
       icon="bx-envelope"
       title="briones@ualberta.ca"
@@ -18,7 +19,7 @@
     <Link icon="bx-phone" title="1 (780) 278 6076" url="sms:+1-780-278-6076" />
 
     <br />
-    <div class="d-flex">
+    <div class="flex">
       <Link v-for="(link, index) of links" :key="index" v-bind="link" />
     </div>
   </div>

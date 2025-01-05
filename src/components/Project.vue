@@ -1,32 +1,34 @@
 <template>
-  <div id="project" class="px-5 py-4 my-3 user-select-none" role="button">
-    <div class="d-flex flex-wrap">
+  <div id="project" class="p-8 my-6 select-none" role="button">
+    <div class="flex flex-wrap">
       <div
         v-for="(tech, index) in props.stack"
         :key="index"
-        class="text-uppercase d-flex align-items-center me-2 mb-1 flex-nowrap"
+        class="uppercase flex items-center mr-2 mb-2 flex-nowrap"
       >
-        <img :src="icon(tech)" height="20" width="20" class="me-1" />
+        <img :src="icon(tech)" class="mr-2 w-4 h-4" />
         {{ tech }}
       </div>
     </div>
-    <h2>{{ props.name }}</h2>
-    <p class="text-white-50 fw-lighter">{{ props.description }}</p>
+    <h2 class="text-2xl font-semibold">{{ props.name }}</h2>
+    <p class="text-gray-400 font-extralight text-base mt-1 mb-2">
+      {{ props.description }}
+    </p>
 
-    <div class="d-flex">
+    <div class="flex">
       <Link
         title="Code"
         icon="bx-code"
         :url="props.code"
         v-if="props.code"
-        class="me-2"
+        class="mr-2"
       />
       <Link
         title="View App"
         icon="bx-desktop"
         :url="props.app"
         v-if="props.app"
-        class="me-2"
+        class="mr-2"
       />
     </div>
   </div>
