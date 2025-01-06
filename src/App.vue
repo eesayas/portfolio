@@ -1,11 +1,11 @@
 <template>
-  <div class="flex mx-auto flex-col md:flex-row">
-    <div class="flex flex-col py-5 md:px-8 md:pt-0 md:w-2/5">
+  <div class="flex mx-auto flex-col md:flex-row md:h-screen">
+    <div class="flex flex-col py-5 md:px-8 md:pt-0 md:w-2/5 overflow-y-auto">
       <About />
     </div>
 
     <div
-      class="md:h-screen overflow-y-auto md:pt-5 flex-1 flex-grow md:px-5 px-3"
+      class="md:h-100 overflow-y-auto md:pt-5 flex-1 flex-grow md:px-5 px-3"
       id="projects"
     >
       <Project
@@ -104,16 +104,3 @@ const projects: ProjectProps[] = [
   },
 ];
 </script>
-
-<style scoped>
-/* Hide scrollbar for Chrome, Safari and Opera */
-#projects::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-#projects {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-</style>
