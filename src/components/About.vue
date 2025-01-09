@@ -24,9 +24,16 @@
       company="University of Alberta"
       type="Contract"
     />
-    <div href="#" class="text-sm text-gray-400 underline cursor-pointer">
-      Read Resume
+    <div>
+      <a
+        href="/resume.pdf"
+        class="text-sm !text-gray-400 underline cursor-pointer"
+        target="_blank"
+      >
+        Read Resume
+      </a>
     </div>
+
     <br />
 
     <div class="text-sm">
@@ -49,7 +56,7 @@ const links = [
   {
     title: "briones@ualberta.ca",
     icon: "bx-envelope",
-    url: "https://github.com/eesayas",
+    url: "mailto:briones@ualberta.ca",
   },
   {
     title: "Github",

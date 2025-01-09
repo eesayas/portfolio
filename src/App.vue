@@ -37,14 +37,14 @@ const projects: ProjectProps[] = [
     description:
       "A classroom management software currently in use at a KUMON center in Edmonton.",
     code: "",
-    app: "https://www.youtube.com/watch?v=C9_weFglsAU",
+    app: "https://www.canva.com/design/DAFlBNP26RU/mm_OIS_Txjl1uHTF3KKDTA/view?utm_content=DAFlBNP26RU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0dabcdee3c",
   },
   {
     stack: ["webrtc", "preactjs", "deno"],
     name: "Confer",
     description: "A simple peer-to-peer video conferencing app.",
-    code: "https://github.com/eesayas/iseeya",
-    app: "https://iseeya.eesayas.com/",
+    code: "https://github.com/eesayas/confer",
+    app: "https://confer.isaiasbriones.com/",
   },
   {
     stack: ["python", "tensorflow"],
@@ -58,15 +58,14 @@ const projects: ProjectProps[] = [
     name: "Isaias & Chalsea",
     description:
       "A wedding website to share guest information, event details, and a custom gift registry.",
-    code: "https://github.com/eesayas/dear-diary",
-    app: "https://dear-diary.online/",
+    code: "https://github.com/eesayas/chalseabibo",
   },
   {
     stack: ["nestjs", "nuxt"],
     name: "PhilSA",
     description:
       "A corporate website created for the Philippine Students' Association at the University of Alberta during the 2021-2022 academic year.",
-    app: "https://philsa.ca/",
+    code: "https://github.com/eesayas/philsa.ca",
   },
   {
     stack: ["react"],
@@ -74,7 +73,6 @@ const projects: ProjectProps[] = [
     description:
       "A journal web app where you can say your thoughts and have it in writing. (Worked with a group of 2)",
     code: "https://github.com/eesayas/dear-diary",
-    app: "https://dear-diary.online/",
   },
   {
     stack: ["expressjs", "bootstrap"],
@@ -82,7 +80,6 @@ const projects: ProjectProps[] = [
     description:
       "A website for a local church in Edmonton, Alberta, which was active from 2017 to 2024.",
     code: "https://github.com/eesayas/reformationedmonton.ca",
-    app: "https://www.reformationedmonton.ca/",
   },
 
   {
@@ -91,7 +88,6 @@ const projects: ProjectProps[] = [
     description:
       "A booking website for Hope Bargain Shoppe to manage customer visits and store capacity during the COVID-19 pandemic.",
     code: "https://github.com/eesayas/hopebargain",
-    app: "https://hopebargainshoppe.online/",
   },
 
   {
