@@ -24,6 +24,11 @@
       company="University of Alberta"
       type="Contract"
     />
+    <Work
+      date="08/2015 - 04/2024"
+      company="Kumon Canada Inc."
+      type="Part Time"
+    />
     <div>
       <a
         href="/resume.pdf"

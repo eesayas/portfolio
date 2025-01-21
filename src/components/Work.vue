@@ -11,7 +11,7 @@
 interface Props {
   date: string;
   company: string;
-  type: "Contract" | "Full Time";
+  type: "Contract" | "Full Time" | "Part Time";
 }
 
 const props = defineProps<Props>();
