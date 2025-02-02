@@ -54,13 +54,6 @@ const projects: ProjectProps[] = [
     code: "https://github.com/eesayas/tensorflow-object-detection-shell",
   },
   {
-    stack: ["svelte"],
-    name: "Isaias & Chalsea",
-    description:
-      "A wedding website to share guest information, event details, and a custom gift registry.",
-    code: "https://github.com/eesayas/chalseabibo",
-  },
-  {
     stack: ["nestjs", "nuxt"],
     name: "PhilSA",
     description:
@@ -73,6 +66,7 @@ const projects: ProjectProps[] = [
     description:
       "A journal web app where you can say your thoughts and have it in writing. (Worked with a group of 2)",
     code: "https://github.com/eesayas/dear-diary",
+    app: "https://diary.isaiasbriones.com/",
   },
   {
     stack: ["expressjs", "bootstrap"],
