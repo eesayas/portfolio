@@ -35,7 +35,7 @@ const projects: ProjectProps[] = [
     ],
     name: "Classie",
     description:
-      "A classroom management software currently in use at a KUMON center in Edmonton.",
+      "A classroom management software currently being used at KUMON centers in Edmonton, Alberta, and Laval, Quebec.",
     code: "",
     app: "https://www.canva.com/design/DAFlBNP26RU/mm_OIS_Txjl1uHTF3KKDTA/view?utm_content=DAFlBNP26RU&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h0dabcdee3c",
   },

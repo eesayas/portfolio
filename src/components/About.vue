@@ -1,9 +1,6 @@
 <template>
   <div class="my-auto px-4" style="display: table">
-    <img
-      src="https://media.licdn.com/dms/image/v2/C5603AQG8oikx_4bm_w/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1646460298961?e=1741219200&v=beta&t=qwJJRDiuRRbyLQx8kKxKyyAlLU0FnhNDzR15cqJHDjo"
-      class="rounded-full mb-4 w-36 h-36"
-    />
+    <img src="/profile.jpeg" class="rounded-full mb-4 w-36 h-36" />
 
     <h1 class="text-3xl leading-none font-semibold">Isaias Briones</h1>
     <p class="font-extralight text-gray-400">
